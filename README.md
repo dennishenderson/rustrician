@@ -4,7 +4,7 @@ My goal is to help others that are new to rust electricity or perhaps seasoned p
 Feel free to send me a message if you see anything that could be improved on, have questions, or would like me to review something you are working on
 
 ## Popular Circuit Designs:
-<b>2 Battery Backup Circuit with Minimal Power Draw</b></br>
+### 2 Battery Backup Circuit with Minimal Power Draw
 <i>(Approximately 8 Hours Of 100 rW Maximum Usage)</i></br>
 ![BackupBattery-2Batteries](batteries/images/BackupBattery-2Batteriesv2.png)
 <b>Links:</b>
@@ -12,7 +12,7 @@ Feel free to send me a message if you see anything that could be improved on, ha
 * [Github Link To Battery Diagrams](batteries)
 * [XML Export](batteries/xml/BackupBattery-2Batteries.xml)
 
-## Advanced Automatic Lights Circuit
+### Advanced Automatic Lights Circuit
 ![AdvancedAutoLights](lights/images/AdvancedAutoLightsv2.png)
 This advanced automatic lighting lets you control roughly how dark you want the lights to come on by setting a required minimum amount of draw (4 rW).</br>
 <b>Links:</b>
@@ -20,7 +20,7 @@ This advanced automatic lighting lets you control roughly how dark you want the 
 * [Github Link To Lighting Diagrams](lights)
 * [XML Export](lights/xml/AdvancedAutoLights.xml)
 
-## 4 Story Base Defense v1.0
+### 4 Story Base Defense v1.0
 ![4StoryBaseDefesnev1.0](bases/images/4StoryBaseDefensev1.0.png)
 This is a base layout for a solo base with a goal to have minimal power draw and no windmills as to not draw too much attention.</br>
 The sensors are all wired to draw additional power from the battery including a secondary battery to supply the tesla coils each 33 rW.</br> 
