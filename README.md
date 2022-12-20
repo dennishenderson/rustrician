@@ -9,5 +9,5 @@ Feel free to send me a message if you see anything that could be improved on, ha
 ![BackupBattery-2Batteries](batteries/images/BackupBattery-2Batteriesv2.png)
 <b>Links:</b>
 * [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=b75b8f5cf1336f12edf6e280d006b47f)
-* [Github Link](batteries)
+* [Github Link To Battery Diagrams](batteries)
 * [XML Export](batteries/xml/BackupBattery-2Batteries.xml)
