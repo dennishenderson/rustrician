@@ -29,4 +29,5 @@ Additionally it includes a counter to let me know how many people walked by whil
 Finally it includes automatic heating and lighting.  This is enough to scare most raiders though not enough for a full on rocket attack.</br>
 <b>Links:</b>
 * [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=fd7c82fead5fe723aac485fc93aa125f)
+* [Github Link To Base Design Diagrams](bases)
 * [XML Export](bases/xml/4StoryBaseDefensev1.0.xml)
