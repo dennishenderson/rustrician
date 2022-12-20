@@ -14,8 +14,8 @@ Additionally each battery has just a few rW of battery drain to support the circ
 * [XML Export](xml/BackupBattery-2Batteries.xml)
 
 ## 3 Battery Backup Circuit with Minimal Power Draw
-<b>(Approximately 112 Hours Of 100 rW Maximum Usage)</b></br>
-![BackupBattery-2Batteries](images/BatteryBackup-3Batteries.png)
+<b>(Approximately 12 Hours Of 100 rW Maximum Usage)</b></br>
+![BackupBattery-3Batteries](images/BatteryBackup-3Batteries.png)
 This circuit was designed to allow for any battery to be lost and minimal single points of failure.</br>
 Additionally each battery has just a few rW of battery drain to support the circuit.</br>
 * Main Battery - Active Minimal Draw 8 rW, Maximum Output 92 rW
@@ -25,3 +25,32 @@ Additionally each battery has just a few rW of battery drain to support the circ
 <b>Links:</b>
 * [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=4f4212043cde403bb81ffbc8cb27fe5a)
 * [XML Export](xml/BackupBattery-2Batteries.xml)
+
+## 4 Battery Backup Circuit with Minimal Power Draw
+<b>(Approximately 16 Hours Of 100 rW Maximum Usage)</b></br>
+![BackupBattery-4Batteries](images/BatteryBackup-4Batteries.png)
+This circuit was designed to allow for any battery to be lost and minimal single points of failure.</br>
+Additionally each battery has just a few rW of battery drain to support the circuit.</br>
+* Main Battery - Active Minimal Draw 12 rW, Maximum Output 88 rW
+* 2nd Battery - Non-Running Draw 6 rW, Active Minimal Drain 11 rW, Maximum Output 89 rW
+* 3rd Battery - Non-Running Draw 4 rW, Active Minimal Draw 7 rW, Maximum Output 93 rW
+* 4th Battery - Non-Running Draw 0 rW, Active Minimal Draw 2 rW, Maximum Output 98 rW</br>
+<i>Note: the Green Light is Optional, you can use any 1rW light or none here, but the draw will be the same</i></br>
+<b>Links:</b>
+* [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=eceffd66b52fb407edb4463487faaff4)
+* [XML Export](xml/BackupBattery-2Batteries.xml)
+
+## 5 Battery Backup Circuit with Minimal Power Draw
+<b>(Approximately 20 Hours Of 100 rW Maximum Usage)</b></br>
+![BackupBattery-5Batteries](images/BatteryBackup-5Batteries.png)
+This circuit was designed to allow for any battery to be lost and minimal single points of failure.</br>
+Additionally each battery has just a few rW of battery drain to support the circuit.</br>
+* Main Battery - Active Minimal Draw 16rW, Maximum Output 84 rW
+* 2nd Battery - Non-Running Draw 9 rW, Active Minimal Draw 16 rW, Maximum Output 84 rW
+* 3rd Battery - Non-Running Draw 8 rW, Active Minimal Draw 13 rW, Maximum Output 87 rW
+* 4th Battery - Non-Running Draw 5 rW, Active Minimal Draw 8 rW, Maximum Output 92 rW
+* 5th Battery - Non-Running Draw 0 rW, Active Minimal Draw 2 rW, Maximum Output 98 rW</br>
+<i>Note: the Green Light is Optional, you can use any 1rW light or none here, but the draw will be the same</i></br>
+<b>Links:</b>
+* [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=a7a5fc5777ec0ce01ec7eb3dda2b60af)
+* [XML Export](xml/BackupBattery-5Batteries.xml)
