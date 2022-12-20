@@ -9,7 +9,7 @@ This is a basic automatic lighting setup, it uses 3 rW as a signal to indicate t
 * [XML Export](xml/BasicAutoLights.xml)
 
 ## Advanced Automatic Lights Circuit
-![AdvancedAutoLights](images/AdvancedAutoLights.png)
+![AdvancedAutoLights](images/AdvancedAutoLightsv2.png)
 This advanced automatic lighting lets you control roughly how dark you want the lights to come on by setting a required minimum amount of draw (4 rW).</br>
 This will mean when the power supplied to the signal panel drops below 20% light, the lights turn on.  You can adjust this setting to have the lights come on earlier or later.</br> 
 Additionally there's no need to waste electricity, the extra rW can be fed into a small battery and back into the root combiner.</br>

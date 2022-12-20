@@ -13,7 +13,7 @@ Feel free to send me a message if you see anything that could be improved on, ha
 * [XML Export](batteries/xml/BackupBattery-2Batteries.xml)
 
 ## Advanced Automatic Lights Circuit
-![AdvancedAutoLights](lights/images/AdvancedAutoLights.png)
+![AdvancedAutoLights](lights/images/AdvancedAutoLightsv2.png)
 This advanced automatic lighting lets you control roughly how dark you want the lights to come on by setting a required minimum amount of draw (4 rW).</br>
 <b>Links:</b>
 * [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=5cb2fdf4600dbf3edd42de5d13f5fa75)
