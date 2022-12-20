@@ -19,3 +19,13 @@ The second battery is enough to supply power for 3 tesla coils at 33 rW of the m
 <b>Links:</b>
 * [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=10620fc903a759c93d8b1d42e7aeac0f)
 * [XML Export](xml/TeslaCoil-HBHFSensorActivated-TwoBattery.xml)
+
+## Three Tesla Coil Circuit - 2 Batteries
+![ThreeTeslaCoil-HBHFSensorActivated-TwoBattery](images/ThreeTeslaCoil-HBHFSensorActivated-TwoBattery.png)
+This circuit is a two battery, 3 tesla coil design that only uses a primary battery to activate the signal, and a second battery to power the tesla coil.</br>
+With the blocker, the drain on both batteries is extremely minimal.</br>
+The second battery is enough to supply power for 3 tesla coils at 33 rW of the max 35 rW possible.</br>
+There's still a remaining 82 rW usable on the main battery that can be used for other circuits on your base.</br>
+<b>Links:</b>
+* [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=4529df0a56199bf0a1dea09f83ece9f8)
+* [XML Export](xml/ThreeTeslaCoil-HBHFSensorActivated-TwoBattery.xml)
