@@ -32,7 +32,7 @@ Additionally each battery has just a few rW of battery drain to support the circ
 This circuit was designed to allow for any battery to be lost and minimal single points of failure.</br>
 Additionally each battery has just a few rW of battery drain to support the circuit.</br>
 * Main Battery - Active Minimal Draw 12 rW, Maximum Output 88 rW
-* 2nd Battery - Non-Running Draw 6 rW, Active Minimal Drain 11 rW, Maximum Output 89 rW
+* 2nd Battery - Non-Running Draw 6 rW, Active Minimal Draw 11 rW, Maximum Output 89 rW
 * 3rd Battery - Non-Running Draw 4 rW, Active Minimal Draw 7 rW, Maximum Output 93 rW
 * 4th Battery - Non-Running Draw 0 rW, Active Minimal Draw 2 rW, Maximum Output 98 rW</br>
 <i>Note: the Green Light is Optional, you can use any 1rW light or none here, but the draw will be the same</i></br>

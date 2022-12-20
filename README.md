@@ -11,3 +11,11 @@ Feel free to send me a message if you see anything that could be improved on, ha
 * [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=b75b8f5cf1336f12edf6e280d006b47f)
 * [Github Link To Battery Diagrams](batteries)
 * [XML Export](batteries/xml/BackupBattery-2Batteries.xml)
+
+## Advanced Automatic Lights Circuit
+![AdvancedAutoLights](lights/images/AdvancedAutoLights.png)
+This advanced automatic lighting lets you control roughly how dark you want the lights to come on by setting a required minimum amount of draw (4 rW).</br>
+<b>Links:</b>
+* [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=5cb2fdf4600dbf3edd42de5d13f5fa75)
+* [Github Link To Lighting Diagrams](lights)
+* [XML Export](lights/xml/AdvancedAutoLights.xml)
