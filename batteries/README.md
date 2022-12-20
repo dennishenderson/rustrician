@@ -2,7 +2,7 @@
 Included is a list of battery circuits that you can design and build on Rust.  I've included links to the circuit design on rustician.io as well as the xml exports of the circuits you can use here.
 
 ## 2 Battery Backup Circuit with Minimal Power Draw
-![BackupBattery-2Batteries](images/BackupBattery-2Batteries.png)
+![BackupBattery-2Batteries](images/BackupBattery-2Batteriesv2.png)
 (Approximately 8 Hours Of 100 rW Maximum Usage) </br>
 This circuit was designed to allow for any battery to be lost and minimal single points of failure. </br> 
 Additionally each battery has just a few rW of battery drain to support the circuit. </br>
