@@ -1,0 +1,218 @@
+<!-- rustrician.io circuit :: Tue Dec 20 2022 11:36:17 GMT-0500 (Eastern Standard Time) -->
+<mxGraphModel>
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0" version="1337.325" tags="battery,battery backup,redundancy" name="Battery Backup - 2 Batteries">
+      <Object sun="100" wind="100" speed="20" as="environment"/>
+    </mxCell>
+    <mxCell id="508" value="Blocker" style="cmp_blocker" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="930" y="18" width="64" height="64" as="geometry"/>
+      <Object cmpid="blocker" consumption="1" state="0" passthrough="0" blockable="1" usage="1" as="attrs"/>
+      <Array as="props"/>
+      <Object mf="75" as="craft"/>
+    </mxCell>
+    <mxCell id="509" value="Power In" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="508">
+      <mxGeometry x="0.4" y="1.05" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="510" value="Block Passthrough" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="508">
+      <mxGeometry x="-0.15" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="511" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="508">
+      <mxGeometry x="0.4" y="-0.2" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="512" value="OR Switch" style="cmp_switch_or" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="1010" y="18" width="64" height="64" as="geometry"/>
+      <Object cmpid="switch_or" consumption="1" passthrough="1" usage="1" as="attrs"/>
+      <Array as="props"/>
+      <Object mf="100" as="craft"/>
+    </mxCell>
+    <mxCell id="513" value="Power In 1" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="512">
+      <mxGeometry x="0.2" y="1.05" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="514" value="Power In 2" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="512">
+      <mxGeometry x="0.6" y="1.05" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="515" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="1" delayed="0" direct="0" warning="0" parent="512">
+      <mxGeometry x="0.4" y="-0.2" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="516" value="0" edge="1" disabled="0" hovered="0" origin="520" link="538" parent="1" source="511" target="513">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1003.6026315789472" y="9.676315789473506"/>
+          <mxPoint x="1003.6026315789472" y="89.6763157894735"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="517" value="Wind Turbine" style="cmp_generator_wind" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="565.5" y="120" width="64" height="64" as="geometry"/>
+      <Object cmpid="generator_wind" isroot="1" combinable="1" as="attrs"/>
+      <Array as="props">
+        <Object name="Amount" type="int" value="150"/>
+        <Object name="Range Min" type="int" value="0"/>
+        <Object name="Range Max" type="int" value="150"/>
+        <Object name="Enable Wind Simulation" type="bool" value="true"/>
+      </Array>
+      <Object hqm="10" gear="3" sm="3" wood="500" as="craft"/>
+    </mxCell>
+    <mxCell id="518" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="517">
+      <mxGeometry x="1" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="519" value="150" edge="1" disabled="0" hovered="0" origin="517" link="0" parent="1" source="518" target="521">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="520" value="Large Rechargeable Battery" style="cmp_battery_large" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="709.5" y="120" width="64" height="64" as="geometry"/>
+      <Object cmpid="battery_large" isroot="0" combinable="1" display="0" display_filter="time" subdisplay="0" charge="0" passthrough="0" output="100" charge_max="24000" charge_min="0" input_multiplier="4" efficiency="80" active_usage="0" last_active_usage="0" usage="150" state="0" laststate="1" laststate2="1" blockable="1" as="attrs">
+        <Array as="active_ids"/>
+        <Object x="0" y="10" as="props_offset"/>
+      </Object>
+      <Array as="props">
+        <Object name="Capacity" type="float" value="24000"/>
+        <Object name="Show Charge Remaining" type="bool" value="true"/>
+        <Object name="Show Active Usage" type="bool" value="true"/>
+      </Array>
+      <Object hqm="10" tech="2" as="craft"/>
+    </mxCell>
+    <mxCell id="521" value="Power In" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="520">
+      <mxGeometry x="-0.15" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="522" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="520">
+      <mxGeometry x="1" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="523" value="Wind Turbine" style="cmp_generator_wind" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="565.5" y="19" width="64" height="64" as="geometry"/>
+      <Object cmpid="generator_wind" isroot="1" combinable="1" as="attrs"/>
+      <Array as="props">
+        <Object name="Amount" type="int" value="150"/>
+        <Object name="Range Min" type="int" value="0"/>
+        <Object name="Range Max" type="int" value="150"/>
+        <Object name="Enable Wind Simulation" type="bool" value="true"/>
+      </Array>
+      <Object hqm="10" gear="3" sm="3" wood="500" as="craft"/>
+    </mxCell>
+    <mxCell id="524" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="523">
+      <mxGeometry x="1" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="525" value="150" edge="1" disabled="0" hovered="0" origin="523" link="0" parent="1" source="524" target="532">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="526" value="Electrical Branch" style="cmp_branch" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="838" y="19" width="64" height="64" as="geometry"/>
+      <Object cmpid="branch" consumption="1" display="2" passthrough="1" branch_min="2" usage="2" as="attrs"/>
+      <Array as="props">
+        <Object name="Branch" type="int" value="2" minval="2"/>
+        <Object name="Show Branch Amount" type="bool" value="true"/>
+      </Array>
+      <Object mf="75" as="craft"/>
+    </mxCell>
+    <mxCell id="527" value="Power In" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="526">
+      <mxGeometry x="0.4" y="1.05" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="528" value="Branch Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="1" direct="0" warning="0" parent="526">
+      <mxGeometry x="0.2" y="-0.2" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="529" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="526">
+      <mxGeometry x="0.6" y="-0.2" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="530" value="100" edge="1" disabled="0" hovered="0" origin="531" link="0" parent="1" source="533" target="527">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="531" value="Large Rechargeable Battery" style="cmp_battery_large" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="709.5" y="19" width="64" height="64" as="geometry"/>
+      <Object cmpid="battery_large" isroot="0" combinable="1" display="14399" display_filter="time" subdisplay="100" charge="0" passthrough="1" output="100" charge_max="24000" charge_min="0" input_multiplier="4" efficiency="80" active_usage="3" last_active_usage="100" usage="150" state="1" laststate="1" laststate2="1" blockable="1" as="attrs">
+        <Array as="active_ids">
+          <add value="526"/>
+          <add value="512"/>
+        </Array>
+        <Object x="0" y="10" as="props_offset"/>
+      </Object>
+      <Array as="props">
+        <Object name="Capacity" type="float" value="23998.3300"/>
+        <Object name="Show Charge Remaining" type="bool" value="true"/>
+        <Object name="Show Active Usage" type="bool" value="true"/>
+      </Array>
+      <Object hqm="10" tech="2" as="craft"/>
+    </mxCell>
+    <mxCell id="532" value="Power In" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="531">
+      <mxGeometry x="-0.15" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="533" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="531">
+      <mxGeometry x="1" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="534" value="Green Industrial Wall Light" style="cmp_industrial_wall_light_green" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="773.5" y="-54" width="64" height="64" as="geometry"/>
+      <Object cmpid="industrial_wall_light_green" consumption="1" active="1" usage="1" as="attrs"/>
+      <Array as="props"/>
+      <Object mf="30" as="craft"/>
+    </mxCell>
+    <mxCell id="535" value="Power In" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="534">
+      <mxGeometry x="1" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="536" value="Passthrough" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="534">
+      <mxGeometry x="-0.05" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="537" value="2" edge="1" disabled="0" hovered="0" origin="531" link="530" parent="1" source="528" target="535">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="538" value="100" edge="1" disabled="0" hovered="0" origin="520" link="0" parent="1" source="522" target="509">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1032.1315789473683" y="144.86578947368412"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="539" value="1" edge="1" disabled="0" hovered="0" origin="531" link="537" parent="1" source="536" target="510">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1002.1315789473684" y="-65.13421052631588"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="540" value="96" edge="1" disabled="0" hovered="0" origin="531" link="541" parent="1" source="515" target="544">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1102.1315789473683" y="7.865789473684117"/>
+          <mxPoint x="1102.1315789473683" y="57.86578947368412"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="541" value="97" edge="1" disabled="0" hovered="0" origin="531" link="530" parent="1" source="529" target="514">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="881" y="5"/>
+          <mxPoint x="910" y="5"/>
+          <mxPoint x="910" y="105"/>
+          <mxPoint x="1053" y="105"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="542" value="Load Simulator" style="group" vertex="1" parent="1">
+      <mxGeometry x="1140" y="-48" width="144" height="168" as="geometry"/>
+    </mxCell>
+    <mxCell id="543" value="Large Rechargeable Battery" style="cmp_battery_large" vertex="1" connectable="0" parent="542">
+      <mxGeometry x="40" y="64" width="64" height="64" as="geometry"/>
+      <Object cmpid="battery_large" isroot="1" combinable="1" display="0" display_filter="time" subdisplay="0" charge="1" passthrough="0" output="100" charge_max="24000" charge_min="0" input_multiplier="4" efficiency="80" active_usage="0" last_active_usage="0" usage="100" state="1" laststate="0" laststate2="0" blockable="1" as="attrs">
+        <Array as="active_ids"/>
+        <Object x="0" y="10" as="props_offset"/>
+      </Object>
+      <Array as="props">
+        <Object name="Capacity" type="float" value="11440.6195"/>
+        <Object name="Show Charge Remaining" type="bool" value="true"/>
+        <Object name="Show Active Usage" type="bool" value="true"/>
+      </Array>
+      <Object hqm="10" tech="2" as="craft"/>
+    </mxCell>
+    <mxCell id="544" value="Power In" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="543">
+      <mxGeometry x="-0.15" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="545" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="543">
+      <mxGeometry x="1" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="546" value="2 Battery Backup Circuit with Minimal Power Draw&#xa;(Approximately 8 Hours Of 100 rW Maximum Usage)" style="text-large" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="565.5" y="-250" width="750" height="100" as="geometry"/>
+    </mxCell>
+    <mxCell id="547" value="This circuit was designed to allow for any battery to be lost and minimal single points of failure.  &#xa;Additionally each battery has just a few rW of battery drain to support the circuit.&#xa;* Main Battery - Active Minimal Draw 4 rW, Maximum Output 96 rW&#xa;* 2nd Battery - Non-Running Draw 0 rW, Active Minimal Draw 2 RW, Maximum Output 98 rW&#xa;Note: the Green Light is Optional, you can use any 1rW light or none here, but the draw will be the same&#xa;" style="text-small" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="510" y="-157" width="840" height="92" as="geometry"/>
+    </mxCell>
+  </root>
+</mxGraphModel>
