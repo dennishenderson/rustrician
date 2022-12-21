@@ -63,5 +63,5 @@ The remainder of the Power goes into storing energy into the Primary Battery Sto
 If the Energy Source ever drops below the required Max Power Requirements set, the Batteries kick in.</br>
 When enough power is returned to the power requirements the primary batteries start to store energy again.</br>
 <b>Links:</b>
-* [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=bc63275564ec51d1081e2f5a4dc7b347)
+* [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=d3445ade031eabedd7d2d127fcd2715e)
 * [XML Export](xml/AdvancedParallelBatteries-2.xml)
