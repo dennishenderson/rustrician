@@ -4,10 +4,11 @@ My goal is to help others that are new to rust electricity or perhaps seasoned p
 Feel free to send me a message if you see anything that could be improved on, have questions, or would like me to review something you are working on
 
 ## Diagram Links
-* [Bases](/bases/)
-* [Batteries](/batteries/)
-* [Lights](/lights/)
-* [Tesla Coils](/teslacoils/)
+* [Bases](bases/)
+* [Batteries](batteries/)
+* [Lights](lights/)
+* [Tesla Coils](teslacoils/)
+* [Timers](timers/)
 
 ## Popular Circuit Designs:
 ### 2 Battery Backup Circuit with Minimal Power Draw
@@ -47,3 +48,13 @@ Finally it includes automatic heating and lighting.  This is enough to scare mos
 * [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=fd7c82fead5fe723aac485fc93aa125f)
 * [Github Link To Base Design Diagrams](bases)
 * [XML Export](bases/xml/4StoryBaseDefensev1.0.xml)
+
+### Fireworks Display - Staggered Timers
+![FireworksDispaly](timers/images/FireworksDispaly.png)
+The following Circuit uses the igniters on a staggering setup to ignite fireworks on 5, 20, and 45 seconds after hitting the button.</br>
+This circuit could be used for anything you need to happen after a certain amount of time once you hit a button.</br>
+The Max timer must be set longer than the igniter timers</br>
+<b>Links:</b>
+* [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=44cda47c2666384e6310b578fd08d657)
+* [Github Link To Timer Design Diagrams](timers)
+* [XML Export](timers/xml/FireworksDisplay.xml)
