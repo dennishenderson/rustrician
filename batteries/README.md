@@ -54,3 +54,10 @@ Additionally each battery has just a few rW of battery drain to support the circ
 <b>Links:</b>
 * [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=a7a5fc5777ec0ce01ec7eb3dda2b60af)
 * [XML Export](xml/BackupBattery-5Batteries.xml)
+
+## Advanced Parallel Battery Circuit - 2 Batteries
+![AdvancedParallelBatteries-2](images/AdvancedParallelBatteries-2.png)
+Due to the way root combiners work, you can achieve a functional Parallel Battery Circuit using something like the below setup.</br>
+<b>Links:</b>
+* [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=bc63275564ec51d1081e2f5a4dc7b347)
+* [XML Export](xml/AdvancedParallelBatteries-2.xml)

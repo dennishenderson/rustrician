@@ -12,6 +12,14 @@ Feel free to send me a message if you see anything that could be improved on, ha
 * [Github Link To Battery Diagrams](batteries)
 * [XML Export](batteries/xml/BackupBattery-2Batteries.xml)
 
+### Advanced Parallel Battery Circuit - 2 Batteries
+![AdvancedParallelBatteries-2](batteries/images/AdvancedParallelBatteries-2.png)
+Due to the way root combiners work, you can achieve a functional Parallel Battery Circuit using something like the below setup.</br>
+<b>Links:</b>
+* [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=bc63275564ec51d1081e2f5a4dc7b347)
+* [Github Link To Battery Diagrams](batteries)
+* [XML Export](batteries/xml/AdvancedParallelBatteries-2.xml)
+
 ### Advanced Automatic Lights Circuit
 ![AdvancedAutoLights](lights/images/AdvancedAutoLightsv2.png)
 This advanced automatic lighting lets you control roughly how dark you want the lights to come on by setting a required minimum amount of draw (4 rW).</br>
