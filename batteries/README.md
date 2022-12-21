@@ -58,6 +58,10 @@ Additionally each battery has just a few rW of battery drain to support the circ
 ## Advanced Parallel Battery Circuit - 2 Batteries
 ![AdvancedParallelBatteries-2](images/AdvancedParallelBatteries-2.png)
 Due to the way root combiners work, you can achieve a functional Parallel Battery Circuit using something like the below setup.</br>
+This combines all energy sources into a single input source. You then use a branch to set you max power requirements.</br>
+The remainder of the Power goes into storing energy into the Primary Battery Store.</br>
+If the Energy Source ever drops below the required Max Power Requirements set, the Batteries kick in.</br>
+When enough power is returned to the power requirements the primary batteries start to store energy again.</br>
 <b>Links:</b>
 * [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=bc63275564ec51d1081e2f5a4dc7b347)
 * [XML Export](xml/AdvancedParallelBatteries-2.xml)
