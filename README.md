@@ -32,7 +32,7 @@ Due to the way Root Combiners work only allowing energy from a main power source
 you can create transfer batteries to re-combined energy.  It comes at a cost of 30% energy loss per large battery.</br>
 For each large battery you add to this circuit, you get roughly 70 rW of energy (1 medium, and 2 small).</br>
 <b>Links:</b>
-* [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=9396eee97e211fc00e7c05536c165e01)
+* [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=27818aeb23837a8d121852b6402d36d3)
 * [Github Link To Battery Diagrams](batteries)
 * [XML Export](batteries/xml/ExtremeParallelBatteries-2.xml)
 

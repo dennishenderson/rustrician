@@ -74,5 +74,5 @@ For each large battery you add to this circuit, you get roughly 70 rW of energy 
 This circuit was designed to account for low and no power from energy sources.  If the amount drops below the required max output,</br>
 the transfer circuit switches any energy that might still be coming from the energy sources and feeds it into the Primary Battery Storage instead.</br>
 <b>Links:</b>
-* [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=9396eee97e211fc00e7c05536c165e01)
+* [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=27818aeb23837a8d121852b6402d36d3)
 * [XML Export](xml/ExtremeParallelBatteries-2.xml)
