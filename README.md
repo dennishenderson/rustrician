@@ -50,7 +50,7 @@ Finally it includes automatic heating and lighting.  This is enough to scare mos
 * [XML Export](bases/xml/4StoryBaseDefensev1.0.xml)
 
 ### Fireworks Display - Staggered Timers
-![FireworksDispaly](timers/images/FireworksDispaly2.png)
+![FireworksDispaly](timers/images/FireworksDisplay2.png)
 The following Circuit uses the igniters on a staggering setup to ignite fireworks on 5, 20, and 45 seconds after hitting the button.</br>
 This circuit could be used for anything you need to happen after a certain amount of time once you hit a button.</br>
 The Max timer must be set longer than the igniter timers</br>
