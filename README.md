@@ -9,8 +9,17 @@ Feel free to send me a message if you see anything that could be improved on, ha
 * [Lights](lights/)
 * [Tesla Coils](teslacoils/)
 * [Timers](timers/)
+* [Trap Bases](trapbases/)
 
 ## Popular Circuit Designs:
+### 2x2 Trap Base
+![2x2TrapBase](trapbases/images/2x2TrapBase.png)
+This Circuit is designed for a 2x2 square base.  I've successfully tested this circuit on a vanilla PVP server and it works great.</br>
+<b>Links:</b>
+* [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=c2a69ac375fe8c81ce79ea204078c269)
+* [Github Link To Trap Base Diagrams](trapbases)
+* [XML Export](trapbases/xml/2x2TrapBase.xmll)
+
 ### 2 Battery Backup Circuit with Minimal Power Draw
 <i>(Approximately 8 Hours Of 100 rW Maximum Usage)</i></br>
 ![BackupBattery-2Batteries](batteries/images/BackupBattery-2Batteriesv2.png)

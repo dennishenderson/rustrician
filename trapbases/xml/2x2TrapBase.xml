@@ -1,0 +1,501 @@
+<!-- rustrician.io circuit :: Mon Dec 26 2022 12:41:49 GMT-0500 (Eastern Standard Time) -->
+<mxGraphModel>
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0" version="1337.325" tags="" name="2x2 Square Trap Base">
+      <Object sun="100" wind="50" speed="10" as="environment"/>
+    </mxCell>
+    <mxCell id="2" value="Pressure Pad" style="cmp_pressurepad" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="310" y="216" width="64" height="64" as="geometry"/>
+      <Object cmpid="pressurepad" isroot="0" combinable="0" consumption="1" state="0" passthrough="0" usage="1" pulse="0" as="attrs"/>
+      <Array as="props"/>
+      <Object wood="150" gear="1" spring="1" as="craft"/>
+    </mxCell>
+    <mxCell id="3" value="Power In" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="2">
+      <mxGeometry x="-0.15" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="4" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="2">
+      <mxGeometry x="1" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="5" value="Electrical Branch" style="cmp_branch" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="238" y="330" width="64" height="64" as="geometry"/>
+      <Object cmpid="branch" consumption="1" display="5" passthrough="1" branch_min="2" usage="5" as="attrs"/>
+      <Array as="props">
+        <Object name="Branch" type="int" value="5" minval="2"/>
+        <Object name="Show Branch Amount" type="bool" value="true"/>
+      </Array>
+      <Object mf="75" as="craft"/>
+    </mxCell>
+    <mxCell id="6" value="Power In" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="5">
+      <mxGeometry x="0.4" y="1.05" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="7" value="Branch Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="1" direct="0" warning="0" parent="5">
+      <mxGeometry x="0.2" y="-0.2" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="8" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="5">
+      <mxGeometry x="0.6" y="-0.2" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="9" value="Memory Cell" style="cmp_memorycell" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="238" y="120" width="64" height="64" as="geometry"/>
+      <Object cmpid="memorycell" consumption="1" state="0" passthrough="0" usage="1" as="attrs">
+        <Array as="consumed"/>
+      </Object>
+      <Array as="props"/>
+      <Object mf="75" as="craft"/>
+    </mxCell>
+    <mxCell id="10" value="Power In" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="9">
+      <mxGeometry x="0.4" y="1.05" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="11" value="Set" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="9">
+      <mxGeometry x="1" y="0.1" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="12" value="Reset" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="9">
+      <mxGeometry x="1" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="13" value="Toggle" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="9">
+      <mxGeometry x="1" y="0.7" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="14" value="Power Out Inverted" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="9">
+      <mxGeometry x="0.2" y="-0.2" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="15" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="9">
+      <mxGeometry x="0.6" y="-0.2" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="16" value="5" edge="1" disabled="0" hovered="0" origin="19" link="22" parent="1" source="7" target="10">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="17" value="0" edge="1" disabled="0" hovered="0" origin="19" link="16" parent="1" source="15" target="70">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="18" value="0" edge="1" disabled="0" hovered="0" origin="19" link="27" parent="1" source="4" target="11">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="379" y="131"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="19" value="Medium Rechargeable Battery" style="cmp_battery_medium" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="142" y="330" width="64" height="64" as="geometry"/>
+      <Object cmpid="battery_medium" isroot="0" combinable="1" display="12353" display_filter="time" subdisplay="0" charge="0" passthrough="1" output="50" charge_max="9000" charge_min="0" input_multiplier="4" efficiency="80" active_usage="12" last_active_usage="12" usage="60" state="1" laststate="1" laststate2="1" blockable="1" as="attrs">
+        <Array as="active_ids">
+          <add value="5"/>
+          <add value="23"/>
+          <add value="28"/>
+          <add value="34"/>
+          <add value="90"/>
+        </Array>
+        <Object x="0" y="10" as="props_offset"/>
+      </Object>
+      <Array as="props">
+        <Object name="Capacity" type="float" value="2470.6943"/>
+        <Object name="Show Charge Remaining" type="bool" value="true"/>
+        <Object name="Show Active Usage" type="bool" value="false"/>
+      </Array>
+      <Object hqm="5" tech="1" as="craft"/>
+    </mxCell>
+    <mxCell id="20" value="Power In" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="19">
+      <mxGeometry x="-0.15" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="21" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="19">
+      <mxGeometry x="1" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="22" value="50" edge="1" disabled="0" hovered="0" origin="19" link="0" parent="1" source="21" target="6">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="23" value="Electrical Branch" style="cmp_branch" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="309.99999999999994" y="330" width="64" height="64" as="geometry"/>
+      <Object cmpid="branch" consumption="1" display="2" passthrough="1" branch_min="2" usage="2" as="attrs"/>
+      <Array as="props">
+        <Object name="Branch" type="int" value="2" minval="2"/>
+        <Object name="Show Branch Amount" type="bool" value="true"/>
+      </Array>
+      <Object mf="75" as="craft"/>
+    </mxCell>
+    <mxCell id="24" value="Power In" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="23">
+      <mxGeometry x="0.4" y="1.05" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="25" value="Branch Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="1" direct="0" warning="0" parent="23">
+      <mxGeometry x="0.2" y="-0.2" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="26" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="23">
+      <mxGeometry x="0.6" y="-0.2" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="27" value="2" edge="1" disabled="0" hovered="0" origin="19" link="38" parent="1" source="25" target="3">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="499.38758994654603" y="299.3893559506065"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="28" value="Electrical Branch" style="cmp_branch" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="385.99999999999994" y="330" width="64" height="64" as="geometry"/>
+      <Object cmpid="branch" consumption="1" display="2" passthrough="1" branch_min="2" usage="2" as="attrs"/>
+      <Array as="props">
+        <Object name="Branch" type="int" value="2" minval="2"/>
+        <Object name="Show Branch Amount" type="bool" value="true"/>
+      </Array>
+      <Object mf="75" as="craft"/>
+    </mxCell>
+    <mxCell id="29" value="Power In" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="28">
+      <mxGeometry x="0.4" y="1.05" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="30" value="Branch Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="1" direct="0" warning="0" parent="28">
+      <mxGeometry x="0.2" y="-0.2" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="31" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="28">
+      <mxGeometry x="0.6" y="-0.2" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="32" value="2" edge="1" disabled="0" hovered="0" origin="19" link="39" parent="1" source="30" target="82">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="33" value="0" edge="1" disabled="0" hovered="0" origin="19" link="32" parent="1" source="83" target="12">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="509" y="151"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="34" value="Electrical Branch" style="cmp_branch" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="460" y="330" width="64" height="64" as="geometry"/>
+      <Object cmpid="branch" consumption="1" display="2" passthrough="1" branch_min="2" usage="2" as="attrs"/>
+      <Array as="props">
+        <Object name="Branch" type="int" value="2" minval="2"/>
+        <Object name="Show Branch Amount" type="bool" value="true"/>
+      </Array>
+      <Object mf="75" as="craft"/>
+    </mxCell>
+    <mxCell id="35" value="Power In" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="34">
+      <mxGeometry x="0.4" y="1.05" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="36" value="Branch Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="1" direct="0" warning="0" parent="34">
+      <mxGeometry x="0.2" y="-0.2" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="37" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="34">
+      <mxGeometry x="0.6" y="-0.2" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="38" value="44" edge="1" disabled="0" hovered="0" origin="19" link="22" parent="1" source="8" target="24">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="298.2116109379955" y="318.8888245441676"/>
+          <mxPoint x="308.2116109379954" y="398.88882454416773"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="39" value="41" edge="1" disabled="0" hovered="0" origin="19" link="38" parent="1" source="26" target="29">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="368.2116109379954" y="318.8888245441676"/>
+          <mxPoint x="378.2116109379954" y="398.88882454416773"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="40" value="Energy Source" style="group" vertex="1" parent="1">
+      <mxGeometry x="-216" y="216" width="326" height="274" as="geometry"/>
+    </mxCell>
+    <mxCell id="41" value="Solar Panel" style="cmp_solarpanel_large" vertex="1" connectable="0" parent="40">
+      <mxGeometry x="40" y="130" width="64" height="64" as="geometry"/>
+      <Object cmpid="solarpanel_large" isroot="1" combinable="1" as="attrs"/>
+      <Array as="props">
+        <Object name="Amount" type="int" value="20"/>
+        <Object name="Range Min" type="int" value="0"/>
+        <Object name="Range Max" type="int" value="20"/>
+        <Object name="Enable Sun Simulation" type="bool" value="true"/>
+      </Array>
+      <Object hqm="5" tech="1" as="craft"/>
+    </mxCell>
+    <mxCell id="42" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="41">
+      <mxGeometry x="1.1" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="43" value="Solar Panel" style="cmp_solarpanel_large" vertex="1" connectable="0" parent="40">
+      <mxGeometry x="40" y="204.0932203389831" width="64" height="64" as="geometry"/>
+      <Object cmpid="solarpanel_large" isroot="1" combinable="1" as="attrs"/>
+      <Array as="props">
+        <Object name="Amount" type="int" value="20"/>
+        <Object name="Range Min" type="int" value="0"/>
+        <Object name="Range Max" type="int" value="20"/>
+        <Object name="Enable Sun Simulation" type="bool" value="true"/>
+      </Array>
+      <Object hqm="5" tech="1" as="craft"/>
+    </mxCell>
+    <mxCell id="44" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="43">
+      <mxGeometry x="1.1" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="45" value="Root Combiner" style="cmp_combiner" vertex="1" connectable="0" parent="40">
+      <mxGeometry x="153.99999999999997" y="114.29661016949149" width="64" height="64" as="geometry"/>
+      <Object cmpid="combiner" consumption="0" passthrough="1" usage="1" as="attrs"/>
+      <Array as="props"/>
+      <Object mf="75" as="craft"/>
+    </mxCell>
+    <mxCell id="46" value="Power In 1" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="45">
+      <mxGeometry x="0.2" y="1.05" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="47" value="Power In 2" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="45">
+      <mxGeometry x="0.6" y="1.05" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="48" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="45">
+      <mxGeometry x="0.4" y="-0.2" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="49" value="Root Combiner" style="cmp_combiner" vertex="1" connectable="0" parent="40">
+      <mxGeometry x="246" y="114.14457831325296" width="64" height="64" as="geometry"/>
+      <Object cmpid="combiner" consumption="0" passthrough="1" usage="1" as="attrs"/>
+      <Array as="props"/>
+      <Object mf="75" as="craft"/>
+    </mxCell>
+    <mxCell id="50" value="Power In 1" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="49">
+      <mxGeometry x="0.2" y="1.05" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="51" value="Power In 2" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="49">
+      <mxGeometry x="0.6" y="1.05" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="52" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="49">
+      <mxGeometry x="0.4" y="-0.2" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="53" value="Solar Panel" style="cmp_solarpanel_large" vertex="1" connectable="0" parent="40">
+      <mxGeometry x="40" y="64" width="64" height="64" as="geometry"/>
+      <Object cmpid="solarpanel_large" isroot="1" combinable="1" as="attrs"/>
+      <Array as="props">
+        <Object name="Amount" type="int" value="20"/>
+        <Object name="Range Min" type="int" value="0"/>
+        <Object name="Range Max" type="int" value="20"/>
+        <Object name="Enable Sun Simulation" type="bool" value="true"/>
+      </Array>
+      <Object hqm="5" tech="1" as="craft"/>
+    </mxCell>
+    <mxCell id="54" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="53">
+      <mxGeometry x="1.1" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="55" value="20" edge="1" disabled="0" hovered="0" origin="43" link="0" parent="40" source="44" target="51">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="294.2116109379954" y="232.88882454416773"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="56" value="20" edge="1" disabled="0" hovered="0" origin="41" link="0" parent="40" source="42" target="47">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="54.21161093799543" y="202.88882454416762"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="57" value="20" edge="1" disabled="0" hovered="0" origin="53" link="0" parent="40" source="54" target="46">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="115" y="93"/>
+          <mxPoint x="136" y="93"/>
+          <mxPoint x="136" y="186"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="58" value="40" edge="1" disabled="0" hovered="0" origin="41" link="0" parent="40" source="48" target="50">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="234.21161093799537" y="102.88882454416762"/>
+          <mxPoint x="234.21161093799537" y="182.88882454416773"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="60" value="38" edge="1" disabled="0" hovered="0" origin="19" link="39" parent="1" source="31" target="35">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="448.21161093799526" y="318.8888245441676"/>
+          <mxPoint x="448.21161093799526" y="398.88882454416773"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="61" value="2" edge="1" disabled="0" hovered="0" origin="19" link="60" parent="1" source="36" target="95">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="62" value="35" edge="1" disabled="0" hovered="0" origin="19" link="60" parent="1" source="91" target="37">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="518.2116109379954" y="398.8888245441676"/>
+          <mxPoint x="518.2116109379954" y="318.8888245441676"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="63" value="4" edge="1" disabled="0" hovered="0" origin="19" link="16" parent="1" source="14" target="66">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="64" value="Trap Door&#xa;(Open When Set)" style="group" vertex="1" parent="1">
+      <mxGeometry x="80" y="-78" width="150" height="198" as="geometry"/>
+    </mxCell>
+    <mxCell id="65" value="Door Controller" style="cmp_doorcontroller" vertex="1" connectable="0" parent="64">
+      <mxGeometry x="40" y="87" width="64" height="64" as="geometry"/>
+      <Object cmpid="doorcontroller" consumption="1" active="1" usage="1" as="attrs"/>
+      <Array as="props"/>
+      <Object mf="75" as="craft"/>
+    </mxCell>
+    <mxCell id="66" value="Power In" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="65">
+      <mxGeometry x="0.4" y="1" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="67" value="Passthrough" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="65">
+      <mxGeometry x="0.4" y="-0.2" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="68" value="Assault Doors Open&#xa;(Closed When Set)&#xa;(Turret and Shotgun Traps" style="group" vertex="1" parent="1">
+      <mxGeometry x="270" y="-78" width="300" height="198" as="geometry"/>
+    </mxCell>
+    <mxCell id="69" value="Door Controller" style="cmp_doorcontroller" vertex="1" connectable="0" parent="68">
+      <mxGeometry x="40" y="87.11117545583238" width="64" height="64" as="geometry"/>
+      <Object cmpid="doorcontroller" consumption="1" active="0" usage="1" as="attrs"/>
+      <Array as="props"/>
+      <Object mf="75" as="craft"/>
+    </mxCell>
+    <mxCell id="70" value="Power In" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="69">
+      <mxGeometry x="0.4" y="1" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="71" value="Passthrough" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="69">
+      <mxGeometry x="0.4" y="-0.2" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="72" value="Door Controller" style="cmp_doorcontroller" vertex="1" connectable="0" parent="68">
+      <mxGeometry x="106" y="87.11117545583238" width="64" height="64" as="geometry"/>
+      <Object cmpid="doorcontroller" consumption="1" active="0" usage="1" as="attrs"/>
+      <Array as="props"/>
+      <Object mf="75" as="craft"/>
+    </mxCell>
+    <mxCell id="73" value="Power In" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="72">
+      <mxGeometry x="0.4" y="1" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="74" value="Passthrough" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="72">
+      <mxGeometry x="0.4" y="-0.2" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="75" value="Flasher Light" style="cmp_flasherlight" vertex="1" connectable="0" parent="68">
+      <mxGeometry x="179.9999999999999" y="87.11117545583241" width="64" height="64" as="geometry"/>
+      <Object cmpid="flasherlight" consumption="1" active="0" usage="1" as="attrs"/>
+      <Array as="props"/>
+      <Object mf="120" as="craft"/>
+    </mxCell>
+    <mxCell id="76" value="Power In" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="75">
+      <mxGeometry x="-0.15" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="77" value="Passthrough" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="75">
+      <mxGeometry x="1" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="78" value="0" edge="1" disabled="0" hovered="0" origin="19" link="17" parent="68" source="71" target="73">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="98" y="79"/>
+          <mxPoint x="98" y="156"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="79" value="0" edge="1" disabled="0" hovered="0" origin="19" link="78" parent="68" source="74" target="76">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="175" y="79"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="80" value="Set Trap" style="group" vertex="1" parent="1">
+      <mxGeometry x="412" y="160" width="88" height="120" as="geometry"/>
+    </mxCell>
+    <mxCell id="81" value="Button" style="cmp_button" vertex="1" connectable="0" parent="80">
+      <mxGeometry x="14" y="40" width="64" height="64" as="geometry"/>
+      <Object cmpid="button" isroot="0" combinable="0" consumption="1" state="0" display="0" display_filter="time" passthrough="0" usage="1" pulse="0" value="0" maxval="5" as="attrs">
+        <Object x="0" y="10" as="props_offset"/>
+      </Object>
+      <Array as="props">
+        <Object name="Show Countdown" type="bool" value="true"/>
+      </Array>
+      <Object mf="75" as="craft"/>
+    </mxCell>
+    <mxCell id="82" value="Power In" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="81">
+      <mxGeometry x="-0.15" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="83" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="81">
+      <mxGeometry x="1" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="84" value="Turret&#xa;(Activates on Sensor)&#xa;(Saves On Battery Drain)" style="group" vertex="1" parent="1">
+      <mxGeometry x="543.2116109379954" y="144.8888245441676" width="245.7883890620045" height="289.6111754558324" as="geometry"/>
+    </mxCell>
+    <mxCell id="85" value="Auto Turret" style="cmp_autoturret" vertex="1" connectable="0" parent="84">
+      <mxGeometry x="141.7883890620045" y="185.6111754558324" width="64" height="64" as="geometry"/>
+      <Object cmpid="autoturret" consumption="10" active="0" state="0" usage="10" as="attrs">
+        <Object x="0" y="10" as="props_offset"/>
+      </Object>
+      <Array as="props">
+        <Object name="Has Target" type="bool" value="true"/>
+        <Object name="Low Ammo" type="bool" value="true"/>
+        <Object name="No Ammo" type="bool" value="true"/>
+      </Array>
+      <Object hqm="10" comp="1" cam="1" as="craft"/>
+    </mxCell>
+    <mxCell id="86" value="Power In" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="85">
+      <mxGeometry x="-0.05" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="87" value="Has Target" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="85">
+      <mxGeometry x="1" y="0.1" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="88" value="Low Ammo" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="85">
+      <mxGeometry x="1" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="89" value="No Ammo" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="85">
+      <mxGeometry x="1" y="0.7" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="90" value="Blocker" style="cmp_blocker" vertex="1" connectable="0" parent="84">
+      <mxGeometry x="41.788389062004626" y="185.1111754558324" width="64" height="64" as="geometry"/>
+      <Object cmpid="blocker" consumption="1" state="0" passthrough="0" blockable="1" usage="1" as="attrs"/>
+      <Array as="props"/>
+      <Object mf="75" as="craft"/>
+    </mxCell>
+    <mxCell id="91" value="Power In" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="90">
+      <mxGeometry x="0.4" y="1.05" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="92" value="Block Passthrough" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="90">
+      <mxGeometry x="-0.15" y="0.4" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="93" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="90">
+      <mxGeometry x="0.4" y="-0.2" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="94" value="XOR Switch" style="cmp_switch_xor" vertex="1" connectable="0" parent="84">
+      <mxGeometry x="61.78838906200474" y="71.11117545583241" width="64" height="64" as="geometry"/>
+      <Object cmpid="switch_xor" consumption="1" passthrough="1" usage="1" as="attrs"/>
+      <Array as="props"/>
+      <Object mf="100" as="craft"/>
+    </mxCell>
+    <mxCell id="95" value="Power In 1" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="94">
+      <mxGeometry x="0.2" y="1.05" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="96" value="Power In 2" style="portv" vertex="1" type="in" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="94">
+      <mxGeometry x="0.6" y="1.05" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="97" value="Power Out" style="portv" vertex="1" type="out" consumable="1" reconsumable="0" delayed="0" direct="0" warning="0" parent="94">
+      <mxGeometry x="0.4" y="-0.2" width="10" height="10" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="98" value="1" edge="1" disabled="0" hovered="0" origin="19" link="61" parent="84" source="97" target="92">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="40" y="64"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="99" value="0" edge="1" disabled="0" hovered="0" origin="19" link="62" parent="84" source="93" target="86">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="140" y="174.00000000000003"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="100" value="0" edge="1" disabled="0" hovered="0" origin="19" link="79" parent="1" source="77" target="96">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="808.2116109379954" y="300"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="101" value="2x2 Square Trap Base Circuit" style="text-large" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="107" y="-250" width="390" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="102" value="This Circuit is designed for a 2x2 square base.  I&#39;ve successfully tested this circuit on a vanilla PVP server and it works great.&#xa;Cover the pressure plate with a rug and/or your sleeping bag.  When tripped, the front door closes behind, and two side doors are opened where shotgun traps are found.&#xa;Additionally the turret activates and starts firing. Requires 12 rW when idle, and 22 rW once set.&#xa;When I built this, I created this as a base a short ways off of my main base, and ran route combiners hidden on the ground, so you can&#39;t tell the base has electricity.&#xa;I hid all the circuitry aswell and added a blue light in a not so obvious area so I could see from my main base if the trap had been triggered.&#xa;&#xa;View all my circuit designs on my GitHub: https://github.com/dennishenderson/rustrician" style="text-small" vertex="1" connectable="0" parent="1">
+      <mxGeometry x="-198" y="-210" width="1000" height="120" as="geometry"/>
+    </mxCell>
+    <mxCell id="59" value="60" edge="1" disabled="0" hovered="0" origin="43" link="0" parent="1" source="52" target="20">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="98.21161093799549" y="318.8888245441676"/>
+          <mxPoint x="108.21161093799537" y="368.8888245441676"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+  </root>
+</mxGraphModel>
