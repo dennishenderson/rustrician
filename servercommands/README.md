@@ -17,7 +17,7 @@ This is a collection of commands for issuing to a rust server if you are an admi
 
 ### inventory.give
 Tools:
-- inventory.give ...thing to build walls...
+- inventory.give building.planner
 - inventory.give hammer
 - inventory.give wiretool
 
@@ -26,6 +26,9 @@ Raw Materials:
 - inventory.give stones 1000
 - inventory.give metal.fragments 1000
 - inventory.give metal.refined 100
+
+Food:
+- inventory.give pumpkin 20
 
 Doors:
 - inventory.give door.hinged.wood
