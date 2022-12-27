@@ -45,6 +45,7 @@ This Circuit is designed for a 2x2 square base.  I've successfully tested this c
 
 ### 4 Story Base Defense v1.0
 ![4StoryBaseDefesnev1.0](bases/images/4StoryBaseDefensev1.0.png)
+![4StoryBaseDefesnev1.0-SS1](bases/images/4StoryBaseDefensev1.0-SS1.jpg)
 This is a base layout for a solo base with a goal to have minimal power draw and no windmills as to not draw too much attention.</br>
 The sensors are all wired to draw additional power from the battery including a secondary battery to supply the tesla coils each 33 rW.</br> 
 The system can sustain the full load of systems with some additional room to overprovision the rW.</br>
