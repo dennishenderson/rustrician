@@ -3,6 +3,8 @@ Included is a list of lighting circuits that you can design and build on Rust.  
 
 ## Basic Automatic Lights Circuit
 ![BasicAutoLights](images/BasicAutoLights.png)
+![BasicAutoLights-SS1](images/BasicAutoLights-SS1.jpg)
+![BasicAutoLights-SS2](images/BasicAutoLights-SS2.jpg)
 This is a basic automatic lighting setup, it uses 3 rW as a signal to indicate there is no electricity being generated from any of the solar panels</br>
 <b>Links:</b>
 * [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=00fafc228978eebd0616996a7904b386)

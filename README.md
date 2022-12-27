@@ -37,6 +37,7 @@ This Circuit is designed for a 2x2 square base.  I've successfully tested this c
 ### 2 Battery Backup Circuit with Minimal Power Draw
 <i>(Approximately 8 Hours Of 100 rW Maximum Usage)</i></br>
 ![BackupBattery-2Batteries](batteries/images/BackupBattery-2Batteriesv2.png)
+![BackupBattery-2Batteries-SS1](batteries/images/BackupBattery-2Batteriesv2-SS1.jpg)
 <b>Links:</b>
 * [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=b75b8f5cf1336f12edf6e280d006b47f)
 * [Github Link To Battery Diagrams](batteries)
