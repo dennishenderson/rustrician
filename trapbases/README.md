@@ -2,7 +2,7 @@
 Included is a list of trap base circuits that you can design and build on Rust.  I've included links to the circuit design on rustician.io as well as the xml exports of the circuits you can use here.
 
 ## 2x2 Trap Base
-![2x2TrapBase](images/2x2TrapBase.png)
+![2x2TrapBase](images/2x2TrapBasev1.1.png)
 ![2x2TrapBase-SS1](images/2x2TrapBase-SS1.jpg)
 ![2x2TrapBase-SS2](images/2x2TrapBase-SS2.jpg)
 ![2x2TrapBase-SS3](images/2x2TrapBase-SS3.jpg)

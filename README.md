@@ -23,7 +23,7 @@ This advanced automatic lighting lets you control roughly how dark you want the 
 * [XML Export](lights/xml/AdvancedAutoLights.xml)
 
 ### 2x2 Trap Base
-![2x2TrapBase](trapbases/images/2x2TrapBase.png)
+![2x2TrapBase](trapbases/images/2x2TrapBasev1.1.png)
 ![2x2TrapBase-SS1](trapbases/images/2x2TrapBase-SS1.jpg)
 ![2x2TrapBase-SS2](trapbases/images/2x2TrapBase-SS2.jpg)
 ![2x2TrapBase-SS3](trapbases/images/2x2TrapBase-SS3.jpg)
