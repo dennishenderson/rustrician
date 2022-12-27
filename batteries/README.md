@@ -66,8 +66,12 @@ When enough power is returned to the power requirements the primary batteries st
 * [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=d3445ade031eabedd7d2d127fcd2715e)
 * [XML Export](xml/AdvancedParallelBatteries-2.xml)
 
-## Extreme Parallel Battery Circuit - 2 Batteries
+## Extreme Parallel Battery Circuit - 2 Batteries (BROKEN)
+<b>Circuit Currently Broken - Short Circuit / Max Depth</b></br>
+<i>Last Tested 12/26/2022 - For Reference Purposes Only</i>
 ![ExtremeParallelBatteries-2](images/ExtremeParallelBatteries-2.png)
+![ExtremeParallelBatteries-2-SS1](images/ExtremeParallelBatteries-2-SS1.jpg)
+![ExtremeParallelBatteries-2-SS2](images/ExtremeParallelBatteries-2-SS2.jpg)
 Due to the way Root Combiners work only allowing energy from a main power source such as a windmill or a battery,</br>
 you can create transfer batteries to re-combined energy.  It comes at a cost of 30% energy loss per large battery.</br>
 For each large battery you add to this circuit, you get roughly 70 rW of energy (1 medium, and 2 small).</br>

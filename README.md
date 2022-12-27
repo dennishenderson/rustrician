@@ -42,16 +42,6 @@ This Circuit is designed for a 2x2 square base.  I've successfully tested this c
 * [Github Link To Battery Diagrams](batteries)
 * [XML Export](batteries/xml/BackupBattery-2Batteries.xml)
 
-## Extreme Parallel Battery Circuit - 2 Batteries
-![ExtremeParallelBatteries-2](batteries/images/ExtremeParallelBatteries-2.png)
-Due to the way Root Combiners work only allowing energy from a main power source such as a windmill or a battery,</br>
-you can create transfer batteries to re-combined energy.  It comes at a cost of 30% energy loss per large battery.</br>
-For each large battery you add to this circuit, you get roughly 70 rW of energy (1 medium, and 2 small).</br>
-<b>Links:</b>
-* [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=27818aeb23837a8d121852b6402d36d3)
-* [Github Link To Battery Diagrams](batteries)
-* [XML Export](batteries/xml/ExtremeParallelBatteries-2.xml)
-
 ### 4 Story Base Defense v1.0
 ![4StoryBaseDefesnev1.0](bases/images/4StoryBaseDefensev1.0.png)
 This is a base layout for a solo base with a goal to have minimal power draw and no windmills as to not draw too much attention.</br>
