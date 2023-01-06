@@ -22,6 +22,17 @@ This advanced automatic lighting lets you control roughly how dark you want the 
 * [Github Link To Lighting Diagrams](lights)
 * [XML Export](lights/xml/AdvancedAutoLights.xml)
 
+## Battery Blocker Smart Alarm
+![BatteryBlockerSmartAlarm](smartalarms/images/BatteryBlockerSmartAlarm.png)
+I've seen several smart alarms out there that use lots of AND and OR switches to detect enemies around a base, and I've even used them myself in the past,</br>
+but this alarm is the most energy efficient setup to detect and alert on motion around the your base.</br>
+This setup would be good for detecting in 4 directions of your base and powering a Smart Alarm, Siren, and Speaker.</br>
+The active rW for this is only 17rW, and active is 20 rW.  Most similar setups using AND and OR switches would be over 30 rW of active use.</br>
+<b>Links:</b>
+* [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=6811a3ab852c455a5aaa7e3d732056e0)
+* [Github Link To Smart Alarm Diagrams](smartalarms)
+* [XML Export](smartalarms/xml/BatteryBlockerSmartAlarm.xml)
+
 ### 2x2 Trap Base
 ![2x2TrapBase](trapbases/images/2x2TrapBasev1.1.png)
 ![2x2TrapBase-SS1](trapbases/images/2x2TrapBase-SS1.jpg)
