@@ -54,6 +54,16 @@ This Circuit is designed for a 2x2 square base.  I've successfully tested this c
 * [Github Link To Battery Diagrams](batteries)
 * [XML Export](batteries/xml/BackupBattery-2Batteries.xml)
 
+### Ultimate Farming Grow Lab
+This diagram shows just about everything you'd need to supply a Mega Grow Lab in rust.</br>
+I've used this in a Vanilla Rust PVP server to supply water over 2 grids away from a water source.</br>
+![Hemp](farming/images/Hemp.jpg)
+![Pipeline2](farming/images/Pipeline2.jpg)
+<b>Links:</b>
+* [Rustician.io Circuit Link](https://www.rustrician.io/?circuit=6dc0eb52efca6e5d42d94dd6517b3346)
+* [Github Link To Farming Diagrams](farming/)
+* [XML Export](farming/xml/UltimateFarmingGrowLab.xml)
+
 ### 4 Story Base Defense v1.0
 ![4StoryBaseDefesnev1.0](bases/images/4StoryBaseDefensev1.0.png)
 ![4StoryBaseDefesnev1.0-SS1](bases/images/4StoryBaseDefensev1.0-SS1.jpg)
